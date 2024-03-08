@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bt{
+    width: 80px;
+    height: 80px;
+    font-size: 4rem;
+}
+
+.btn-danger{
+    width: 40%;
+}
