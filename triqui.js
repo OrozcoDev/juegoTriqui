@@ -241,6 +241,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    
+
 
     function verificar(){
         maquina()
