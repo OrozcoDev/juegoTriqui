@@ -120,12 +120,12 @@ document.addEventListener('DOMContentLoaded', function() {
             btn2.disabled = true;
             turno = jugador1;
         }else if(btn4.textContent === 'X' && btn6.textContent === 'X' && btn5.textContent === ''){
-            btn6.textContent = 'O'
-            btn6.disabled = true;
+            btn5.textContent = 'O'
+            btn5.disabled = true;
             turno = jugador1;
         }else if(btn7.textContent === 'X' && btn9.textContent === 'X' && btn8.textContent === ''){
-            btn9.textContent = 'O'
-            btn9.disabled = true;
+            btn8.textContent = 'O'
+            btn8.disabled = true;
             turno = jugador1;
         }
 
@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }else if(btn2.textContent === 'X' && btn5.textContent === 'X' && btn8.textContent === ''){
             btn8.textContent = 'O'
             btn8.disabled = true;
+            turno = jugador1;
         }else if(btn3.textContent === 'X' && btn6.textContent === 'X' && btn9.textContent === ''){
             btn9.textContent = 'O'
             btn9.disabled = true;
