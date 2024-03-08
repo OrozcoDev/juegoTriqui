@@ -100,7 +100,142 @@ document.addEventListener('DOMContentLoaded', function() {
             btn5.textContent = turno
             btn5.disabled = true;
             turno = jugador1;
-        }else if(btn1.textContent === 'X' && btn2.textContent === 'X' && btn3.textContent === ''){
+        }
+        
+        // horizontales ++_
+        else if(btn1.textContent === 'O' && btn2.textContent === 'O' && btn3.textContent === ''){
+            btn3.textContent = 'O'
+            btn3.disabled = true;
+            turno = jugador1;
+        }
+        else if(btn4.textContent === 'O' && btn5.textContent === 'O' && btn6.textContent === ''){
+            btn6.textContent = 'O'
+            btn6.disabled = true;
+            turno = jugador1;
+        }else if(btn7.textContent === 'O' && btn8.textContent === 'O' && btn9.textContent === ''){
+            btn9.textContent = 'O'
+            btn9.disabled = true;
+            turno = jugador1;
+        }
+
+        // horizontales +_+
+        else if(btn1.textContent === 'O' && btn3.textContent === 'O' && btn2.textContent === ''){
+            btn2.textContent = 'O'
+            btn2.disabled = true;
+            turno = jugador1;
+        }
+        else if(btn4.textContent === 'O' && btn6.textContent === 'O' && btn5.textContent === ''){
+            btn5.textContent = 'O'
+            btn5.disabled = true;
+            turno = jugador1;
+        }else if(btn7.textContent === 'O' && btn9.textContent === 'O' && btn8.textContent === ''){
+            btn8.textContent = 'O'
+            btn8.disabled = true;
+            turno = jugador1;
+        }
+
+        // horiziontales _++
+        else if(btn2.textContent === 'O' && btn3.textContent === 'O' && btn1.textContent === ''){
+            btn1.textContent = 'O'
+            btn1.disabled = true;
+            turno = jugador1;
+        }
+        else if(btn5.textContent === 'O' && btn6.textContent === 'O' && btn4.textContent === ''){
+            btn4.textContent = 'O'
+            btn4.disabled = true;
+            turno = jugador1;
+        }else if(btn8.textContent === 'O' && btn9.textContent === 'O' && btn7.textContent === ''){
+            btn7.textContent = 'O'
+            btn7.disabled = true;
+            turno = jugador1;
+        }
+
+
+        // verticales ++_
+        else if(btn1.textContent === 'O' && btn4.textContent === 'O' && btn7.textContent === ''){
+            btn7.textContent = 'O'
+            btn7.disabled = true;
+            turno = jugador1;
+        }
+        else if(btn2.textContent === 'O' && btn5.textContent === 'O' && btn8.textContent === ''){
+            btn8.textContent = 'O'
+            btn8.disabled = true;
+            turno = jugador1;
+        }else if(btn3.textContent === 'O' && btn6.textContent === 'O' && btn9.textContent === ''){
+            btn9.textContent = 'O'
+            btn9.disabled = true;
+            turno = jugador1;
+        }
+
+        // verticales +_+
+        else if(btn1.textContent === 'O' && btn3.textContent === 'O' && btn2.textContent === ''){
+            btn2.textContent = 'O'
+            btn2.disabled = true;
+            turno = jugador1;
+        }
+        else if(btn4.textContent === 'O' && btn6.textContent === 'O' && btn5.textContent === ''){
+            btn5.textContent = 'O'
+            btn5.disabled = true;
+            turno = jugador1;
+        }else if(btn7.textContent === 'O' && btn9.textContent === 'O' && btn8.textContent === ''){
+            btn8.textContent = 'O'
+            btn8.disabled = true;
+            turno = jugador1;
+        }
+
+        // verticales _++
+        else if(btn2.textContent === 'O' && btn3.textContent === 'O' && btn1.textContent === ''){
+            btn1.textContent = 'O'
+            btn1.disabled = true;
+            turno = jugador1;
+        }
+        else if(btn5.textContent === 'O' && btn6.textContent === 'O' && btn4.textContent === ''){
+            btn4.textContent = 'O'
+            btn4.disabled = true;
+            turno = jugador1;
+        }else if(btn8.textContent === 'O' && btn9.textContent === 'O' && btn7.textContent === ''){
+            btn7.textContent = 'O'
+            btn7.disabled = true;
+            turno = jugador1;
+        }
+        
+
+        
+        //VALIDACIONES DIAGONALES \
+        else if(btn1.textContent === 'O' && btn5.textContent === 'O' && btn9.textContent === ''){
+            btn9.textContent = 'O'
+            btn9.disabled = true;
+            turno = jugador1;
+        }else if(btn9.textContent === 'O' && btn5.textContent === 'O' && btn1.textContent === ''){
+            btn1.textContent = 'O'
+            btn1.disabled = true;
+            turno = jugador1;
+        }else if(btn1.textContent === 'O' && btn9.textContent === 'O' && btn5.textContent === ''){
+            btn5.textContent = 'O'
+            btn5.disabled = true;
+            turno = jugador1;
+        }
+        
+
+        //VALIDACIONES DIAGONALES /
+        else if(btn3.textContent === 'O' && btn5.textContent === 'O' && btn7.textContent === ''){
+            btn7.textContent = 'O'
+            btn7.disabled = true;
+            turno = jugador1;
+        }else if(btn7.textContent === 'O' && btn5.textContent === 'O' && btn3.textContent === ''){
+            btn3.textContent = 'O'
+            btn3.disabled = true;
+            turno = jugador1;
+        }else if(btn3.textContent === 'O' && btn7.textContent === 'O' && btn5.textContent === ''){
+            btn5.textContent = 'O'
+            btn5.disabled = true;
+            turno = jugador1;
+        }
+        
+        
+        
+        
+        else if(btn1.textContent === 'X' && btn2.textContent === 'X' && btn3.textContent === ''){
             btn3.textContent = 'O'
             btn3.disabled = true;
             turno = jugador1;
