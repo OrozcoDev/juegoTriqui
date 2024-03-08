@@ -239,7 +239,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-
+    function botonesDeshabilitados() {
+        var btns = document.querySelectorAll('button[id^="a"], button[id^="b"], button[id^="c"]');
+        for (var i = 0; i < btns.length; i++) {
+            var btn = btns[i];
+            btn.disabled = true;
+        }
+    }
 
     
 
@@ -248,56 +254,72 @@ document.addEventListener('DOMContentLoaded', function() {
         maquina()
 
         if(btn1.textContent === 'X' && btn2.textContent === 'X' && btn3.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn1.textContent === 'O' && btn2.textContent === 'O' && btn3.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
         if(btn4.textContent === 'X' && btn5.textContent === 'X' && btn6.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn4.textContent === 'O' && btn5.textContent === 'O' && btn6.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
         if(btn7.textContent === 'X' && btn8.textContent === 'X' && btn9.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn7.textContent === 'O' && btn8.textContent === 'O' && btn9.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
 
 
         if(btn1.textContent === 'X' && btn4.textContent === 'X' && btn7.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn1.textContent === 'O' && btn4.textContent === 'O' && btn7.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
         if(btn2.textContent === 'X' && btn5.textContent === 'X' && btn8.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn2.textContent === 'O' && btn5.textContent === 'O' && btn8.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
         if(btn3.textContent === 'X' && btn6.textContent === 'X' && btn9.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn3.textContent === 'O' && btn6.textContent === 'O' && btn9.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
 
 
         if(btn1.textContent === 'X' && btn5.textContent === 'X' && btn9.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn1.textContent === 'O' && btn5.textContent === 'O' && btn9.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
         if(btn3.textContent === 'X' && btn5.textContent === 'X' && btn7.textContent === 'X') {
-            Swal.fire("gano el jugador X!");
+            Swal.fire("Ganaste!!!");
+            botonesDeshabilitados()
         }
         if(btn3.textContent === 'O' && btn5.textContent === 'O' && btn7.textContent === 'O') {
             Swal.fire("Perdiste!");
+            botonesDeshabilitados()
         }
     }
 });
