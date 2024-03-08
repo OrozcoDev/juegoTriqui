@@ -364,7 +364,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     botonesVacios.push(btn);
                 }
             }
-            if (botonesVacios.length > 0) {
+            var esquinasDisponibles = [btns[0], btns[2], btns[6], btns[8]].filter(btn => btn.textContent.trim() === '');
+            if(botonesVacios.length === 8){
+                var indiceAleatorio = Math.floor(Math.random() * esquinasDisponibles.length);
+                var btnAleatorio = esquinasDisponibles[indiceAleatorio];
+                btnAleatorio.textContent = 'O';
+                btnAleatorio.disabled = true;
+            }else if (botonesVacios.length > 0) {
                 var indiceAleatorio = Math.floor(Math.random() * botonesVacios.length);
                 var btnAleatorio = botonesVacios[indiceAleatorio];
                 btnAleatorio.textContent = 'O';
