@@ -392,8 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function verificar(){
-        maquina()
-
+        
         if(btn1.textContent === 'X' && btn2.textContent === 'X' && btn3.textContent === 'X') {
             Swal.fire("Ganaste!!!");
             botonesDeshabilitados()
@@ -460,5 +459,6 @@ document.addEventListener('DOMContentLoaded', function() {
             Swal.fire("Perdiste!");
             botonesDeshabilitados()
         }
+        maquina()
     }
 });
